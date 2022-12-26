@@ -1,0 +1,96 @@
+/* acme-regular - latin */
+@font-face {
+  font-family: 'Acme';
+  font-style: normal;
+  font-weight: 400;
+  src: local(''),
+       url('../fonts/acme-v21-latin-regular.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+       url('../fonts/acme-v21-latin-regular.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+
+
+
+*::after,
+*::before,
+*{
+  box-sizing: border-box;
+}
+
+.main{
+  padding: 0 80px ;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+body{
+  background-image: url(./images/pink_time_gif.gif);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top;
+}
+h2{
+  font-family: 'Acme';
+  font-size: 50px;
+  color: blueviolet;
+}
+p{
+  font-family: 'Acme';
+  font-size: 50px;
+  color: blueviolet;
+}
+a{
+  text-decoration: none;
+}
+a:hover{
+  text-decoration: underline;
+}
+
+.time-container {
+  font-family: 'Acme';
+  font-size: 100px;
+  color: blueviolet;
+}
+
+@media screen and (max-width:860px){
+  .time-container {
+    font-size: 70px;
+  }
+  span{
+    font-size: 60px;
+  }
+  p{
+    font-size: 30px;
+  }
+}
+@media screen and (max-width:590px){
+  .time-container {
+    font-size: 40px;
+  }
+  h2{
+    font-size: 40px;
+  }
+  span{
+    font-size: 40px;
+  }
+  p{
+    font-size: 20px;
+  }
+}
+@media screen and (max-width:450px){
+  .time-container {
+    font-size: 25px;
+  }
+  h2{
+    font-size: 25px;
+  }
+  span{
+    font-size: 25px;
+  }
+  p{
+    font-size: 16px;
+  }
+}
